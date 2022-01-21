@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite 2.0" parallel="tests">
+	<test name="Parallel Test" thread-count="5" >
+
+		<parameter name="browser" value="chrome" />
+
+		<parameter name="testname" value="Parallel Test" />
+		<classes>
+
+			<class name="com.Scuba.pages.ParallelTestWise">
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
